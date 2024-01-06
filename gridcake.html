@@ -4,23 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
-    </style>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://kit.fontawesome.com/4d8ffbb55d.js" crossorigin="anonymous"></script>
+    <title>Cakes</title>
     <style>
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+
         * {
             margin: 0px;
             padding: 0px;
-        }
-
-        body {
-            background-image: url('https://t3.ftcdn.net/jpg/05/52/04/96/360_F_552049619_cDSWkPfGoiFntULDdwzlCc4HZiCimP89.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
         }
 
         nav {
@@ -70,232 +64,32 @@
             color: rgb(0, 0, 0);
         }
 
+        img {
+            height: 300px;
+
+            position: sticky;
+            left: 0;
+            width: min(50vw, 350px);
+        }
+
         .container {
-            display: flex;
-            gap: 14px 0px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .div_img img {
-            height: 250px;
-            width: 250px;
-            transition: border-radius linear 0.7s;
-
-        }
-
-        .div_img img:hover {
-            border-radius: 50px;
-            box-shadow: 2px 2px 6px white;
-
-        }
-
-        .text {
-
-            width: 250px;
+            display: block;
+            width: 100%;
+            overflow-y: hidden;
+            overflow-x: auto;
+            white-space: nowrap;
             text-align: center;
+            scroll-behavior: smooth;
         }
 
-        .text li {
-            list-style: none;
-        }
-
-        .box {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-
-        }
-
-        .container ul {
-            padding: 0px;
-            font-family: Comic Sans MS;
-            font-size: 18px;
-            color: rgb(136, 84, 84);
-        }
-
-        h3 {
-            margin: 0px;
-            color: rgb(87, 41, 41);
-            font-size: 40px;
-            font-family: 'Kalam', cursive;
-        }
-
-        .head {
-            text-align: center;
-            background-color: white;
-            font-size: 45px;
-
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            letter-spacing: 10px;
-            color: rgb(100, 76, 41);
-        }
-
-        .spcl_head {
-            text-align: center;
-            background-color: white;
-            color: rgb(87, 41, 41);
-            font-size: 50px;
-            font-weight: bold;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            letter-spacing: 10px;
-        }
-
-        .imagesbox1 {
-            display: flex;
-            gap: 20px 100px;
-            justify-content: center;
-            flex-wrap: wrap;
-
-        }
-
-        .imagesbox2 {
-            display: flex;
-            gap: 20px 100px;
-            justify-content: center;
-            flex-wrap: wrap;
-
-        }
-
-        .imgdiv img {
-            height: 200px;
-            width: 200px;
-
-        }
-
-        .imgdiv img:hover {
-            opacity: 0.7;
-        }
-
-        .thead {
-            text-align: center;
-            font-size: 50px;
-            letter-spacing: 5px;
-            padding: 10px;
-        }
-
-        h4 {
-            text-align: center;
-            font-size: 15px;
-
-            font-family: Poppins, sans-serif;
+        p {
             text-transform: uppercase;
-            letter-spacing: 2px;
-
-            background-color: rgb(145, 4, 135);
-            color: bisque;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        .footer {
-            background: #ffe1e1;
-        }
-
-        .footer_content {
-            justify-content: center;
-            gap: 60px;
-            display: flex;
-            flex-wrap: wrap;
-
-
-
-        }
-
-        .footer_content ul,
-        a {
-            list-style: none;
-            text-decoration: none;
-        }
-
-        .footer_content li {
-            padding: 4px;
-            font-size: 18px;
-            color: #6c717a;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-
-        .footer_content h3 {
-            padding: 20px 0px;
-            font-size: 25px;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-
-        .reach i {
-            padding: 10px;
-            font-size: 20px;
-            border: 2px solid rgb(7, 3, 3);
-            border-radius: 4px;
-            padding: 8px;
-            color: rgb(0, 0, 0);
-            cursor: pointer;
-        }
-
-        .reach i:hover {
-            transform: scale(1.2);
-            transition: all 0.3s;
-            cursor: pointer;
-            background-color: rgb(255, 255, 255);
-        }
-
-        .flogo img {
-            height: 200px;
-            width: 200px;
-            mix-blend-mode: multiply;
-        }
-
-        .copy {
+            font-size: 60px;
+            margin: 10px 8px;
             text-align: center;
-            font-size: 14px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            padding: 20px;
-            color: #6c717a;
-            padding-bottom: 50px;
-        }
-
-        .callus,
-        .hours {
-            list-style: none;
-        }
-
-        /* media queries */
-        @media only screen and (max-width:800px)and (min-width:50px) {
-            .container_ul {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .num {
-                position: relative;
-                right: 0;
-            }
-
-            .logo {
-                justify-content: center;
-            }
-
-            nav {
-                justify-content: center;
-                flex-direction: column;
-            }
-        }
-
-        @media only screen and (max-width:500px) {
-            .thead {
-                font-size: 30px;
-            }
-
-            .spcl_head {
-                font-size: 30px;
-                letter-spacing: 5px;
-            }
-
-            .head {
-                font-size: 30px;
-                letter-spacing: 5px;
-            }
+            BACKGROUND: gainsboro;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            letter-spacing: 10px;
         }
     </style>
 </head>
@@ -306,7 +100,7 @@
             <img src="https://ih1.redbubble.net/image.2342586976.0567/st,small,507x507-pad,600x600,f8f8f8.jpg">
         </div>
         <ul class="container_ul">
-            <a href="bakery.html">
+            <a href="index.html">
                 <li>HOME</li>
             </a>
             <a href="menu.html">
@@ -323,180 +117,117 @@
             </a>
         </ul>
     </nav>
-    <h1 class="head">~BAKERY MENU~</h1>
+    <p data-aos="flip-up" data-aos-duration="3000" data-aos-once="true">~Chocolate Cakes~</p>
     <div class="container">
-        <div class="box">
-            <a href="gridcake.html">
-                <div class="div_img"><img
-                        src="https://cdn.shopify.com/s/files/1/0521/3929/4884/products/chocoholic1.jpg?v=1626941600">
-                </div>
-            </a>
-            <div class="text">
-                <h3 data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">Cakes</h3>
-                <ul data-aos="zoom-in-up" data-aos-duration="2500" data-aos-once="true">
-                    <li>Chocolate - 200/-</li>
-                    <li>Strawberry -300/-</li>
-                    <li>Black Forest - 400/-</li>
-                    <li>Pineapple - 450/-</li>
-                    <li>ButterScotch - 450/-</li>
-                    <li>Vanilla - 385/-</li>
-                    <li>RedVelvet - 500/-</li>
-                </ul>
-            </div>
-        </div>
-        <div class="box">
-            <a href="donutgrid.html">
-                <div class="div_img"><img
-                        src="https://www.completelydelicious.com/wp-content/uploads/2021/02/yeast-raised-doughnuts-6.jpg">
-                </div>
-            </a>
-            <div class="text">
-                <h3 data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">Donuts</h3>
-                <ul data-aos="zoom-in-up" data-aos-duration="2500" data-aos-once="true">
-                    <li>Strawberry - 50/-</li>
-                    <li>BlueBerry - 55/-</li>
-                    <li>Peanut - 40/-</li>
-                    <li>Sugar Raised - 30/-</li>
-
-
-                    <li>Rainbow -70/- </li>
-                    <li>Chocolate - 40/-</li>
-                    <li>Avacado - 65/-</li>
-                </ul>
-            </div>
-        </div>
-
-<div class="box">
-            <a href="gridpastry.html">
-                <div class="div_img"><img src="https://bkmedia.bakingo.com/tasty-chocolate-truffle-past0162choc-CC.jpg">
-                </div>
-            </a>
-            <div class="text">
-                <h3 data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">Pastries</h3>
-                <ul data-aos="zoom-in-up" data-aos-duration="2500" data-aos-once="true">
-                    <li>Coffee - 55/-</li>
-                    <li>ButterScotch - 45/-</li>
-                    <li>Oreo - 70/-</li>
-                    <li>Fruit - 65/-</li>
-                    <li>Mango - 50/-</li>
-                    <li>Black Forest - 40/-</li>
-                    <li>Redvelvet - 60/-</li>
-                </ul>
-            </div>
-        </div>
-        <div class="box">
-            <a href="cupcakegrid.html">
-                <div class="div_img"><img
-                        src="https://cdn.shopify.com/s/files/1/0521/3929/4884/products/Vanilla_BlueberryCupCake1-green-dot.jpg?v=1669903458">
-                </div>
-            </a>
-            <div class="text">
-                <h3 data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">CupCakes</h3>
-                <ul data-aos="zoom-in-up" data-aos-duration="2500" data-aos-once="true">
-                    <li>Lemon - 60/-</li>
-                    <li>Banana - 50/-</li>
-                    <li>Jam - 75/-</li>
-                    <li>Icecream - 80/-</li>
-                    <li>Peanut Butter - 75/-</li>
-                    <li>Pumpkin - 90/-</li>
-                    <li>Caramel - 130/-</li>
-                </ul>
-            </div>
-        </div>
+        <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/51nmDMBHx4L._AC_UF1000,1000_QL80_.jpg"
+            alt="">
+        <img src="https://www.labonelfinebaking.shop/wp-content/uploads/2021/02/CLASSIC-CHOCOLATE-CAKE.jpg" alt="">
+        <img src="https://mrbrownbakery.com/image/images/GJ7uCwGiteTF24HTWBclkziVTdhpQeZWH23MvQfq.jpeg?p=full" alt="">
+        <img src="https://www.chefbakers.com/uploads/userfiles/double-chocolate-cake3.jpg" alt="">
+        <img src="https://d3cif2hu95s88v.cloudfront.net/live-site-2016/product-image/Cakes/truffle-cake-600x600.jpg"
+            alt="">
+        <img src="https://www.modernhoney.com/wp-content/uploads/2016/10/DSC_0143edit2.jpg" alt="">
+        <img src="https://bkmedia.bakingo.com/sq-snicker-chocolate-cake0028choc-AA.jpg" alt="">
+        <img src="https://pic.warmoven.in/catalog/product/cache/de44929a3c2a476b28672db1e66c962d/c/l/classic-belgian-chocolate-cake.jpg"
+            alt="">
     </div>
+    <p data-aos="flip-up" data-aos-duration="3000" data-aos-once="true">~Strawberry Cakes~</p>
+    <div class="container">
+        <img src="https://preppykitchen.com/wp-content/uploads/2022/05/Strawberry-Cake-Recipe-Card-500x500.jpg" alt="">
+
+<img src="https://floralmall.in/wp-content/uploads/2023/02/strawberry-cake.jpg" alt="">
+        <img src="https://theloopywhisk.com/wp-content/uploads/2021/07/Small-Batch-Gluten-Free-Strawberry-Shortcake-Cake_730px-featured.jpg"
+            alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9err9QRCFqkyOLhIgOs6CaaKMrHp6dLA4fw&usqp=CAU"
+            alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfBgmZkfiHUe3UxZPTs_0hFtYL4XogKrQZdw&usqp=CAU"
+            alt="">
+        <img src="https://www.kukkr.com/cdn/shop/products/strawberry-cake-kukkr-cakes.jpg?v=1678855948&width=1946"
+            alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKBY7GQe2ds1CSN2GWy_JycOL8PUYo6k20OA&usqp=CAU"
+            alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkVYKqi_Zjy-wgLedGkW-ecPO4s7tokT-W1Q&usqp=CAU"
+            alt="">
     </div>
-    <div class="spcl_head" data-aos="fade-up" data-aos-once="true">~Our Specialities~</div>
-    <div class="thead" data-aos="fade-up" data-aos-once="true">| BY OCCASIONS |</div>
-    <div class="imagesbox1" data-aos="fade-up" data-aos-once="true">
-
-        <div class="imgdiv">
-            <a href="#"><img src="birthday.jpg" alt="error"></a>
-            <h4>BirthdayCake</h4>
-        </div>
-        <div class="imgdiv">
-            <a href="#"><img src="annicake.cake" alt="error"></a>
-            <h4>AnniverseryCake</h4>
-        </div>
-        <div class="imgdiv">
-            <a href="#"><img src="wedcake.jpg" alt="error"></a>
-            <h4>WeddingCake</h4>
-        </div>
-        <div class="imgdiv">
-            <a href="#"><img src="ffcake" alt="error"></a>
-            <h4>FriendshipCake</h4>
-        </div>
+    <p data-aos="flip-up" data-aos-duration="3000" data-aos-once="true">~Black Forest Cakes~</p>
+    <div class="container">
+        <img src="https://static.toiimg.com/thumb/79623521.cms?imgsize=197307&width=800&height=800" alt="">
+        <img src="https://res.cloudinary.com/insignia-flowera-in/images/f_auto,q_auto/v1688050488/Special-Black-Forest_2758c72b9/Special-Black-Forest_2758c72b9.jpg"
+            alt="">
+        <img src="https://assets.winni.in/product/primary/2023/3/83233.jpeg?dpr=1&w=1000" alt="">
+        <img src="https://www.foodandwine.com/thmb/H9NS3GaVp-2XHt6wbPtrhwh0bws=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Black-Forest-Cake-FT-RECIPE0623-29bb291902e845bab17a7fc1d65e4ebb.jpg"
+            alt="">
+        <img src="https://houseofnasheats.com/wp-content/uploads/2016/10/Black-Forest-Cake-Square-1.jpg" alt="">
+        <img src="https://www.shreemithai.com/cdn/shop/products/FShreemithai15-01-2021-407lowrescopy_2400x.jpg?v=1611572013"
+            alt="">
+        <img src="https://cdn.igp.com/f_auto,q_auto,t_pnopt19prodlp/products/p-classic-black-forest-cake-1-kg--108743-m.jpg"
+            alt="">
+        <img src="https://www.fnp.com/images/pr/l/v20221205202048/black-forest-cake-half-kg_1.jpg" alt="">
     </div>
-    <div class="thead" data-aos="fade-up" data-aos-once="true">| BY TYPE |</div>
-    <div class="imagesbox2" data-aos="fade-up" data-aos-once="true">
+    <p data-aos="flip-up" data-aos-duration="3000" data-aos-once="true">~Pineapple Cakes~</p>
+    <div class="container">
+        <img src="https://www.greatestbakery.in/wp-content/uploads/2023/05/Pineapple-Cake.jpg">
 
-        <div class="imgdiv">
-            <a href="#"><img src="bomb.jpg" alt="error"></a>
-            <a href="#">
-                <h4>BombCake</h4>
-            </a>
-        </div>
-        <div class="imgdiv">
-            <a href="#"><img src="pinataa.webp" alt="error"></a>
-            <a href="#">
-                <h4>PinataCake</h4>
-            </a>
-        </div>
-        <div class="imgdiv">
-            <a href="#"><img src="jarr.webp" alt="error"></a>
-            <a href="#">
-                <h4>JarCake</h4>
-            </a>
-        </div>
-        <div class="imgdiv">
-            <a href="#"><img src="pullmeupp.jpeg" alt="error"></a>
-            <a href="#">
-                <h4>PullMeUpCake</h4>
-            </a>
-        </div>
+        <img src="https://thepinkberry.in/cdn/shop/products/pineapplecake1.jpg?v=1684765833&width=1946" alt="">
+        <img src="https://cdn.igp.com/f_auto,q_auto,t_pnopt19prodlp/products/p-delicious-creamy-pineapple-cake-600-gm--190849-m.jpg"
+            alt="">
+        <img src="https://www.thankufoods.com/cdn/shop/products/TF_0025_IABTHANKU9385.jpg?v=1674457528&width=2048"
+            alt="">
+        <img src="https://www.ambalacakes.com/data/cache/images/cakes/cake%20by%20flavour/pineapple%20cake/pineapple-cake-440x440.webp"
+            alt="">
+        <img src="https://bkmedia.bakingo.com/sq-pineapple-cake0022pifr-AA_0.jpg" alt="">
+        <img src="https://www.urbancraftgourmet.co.in/cdn/shop/files/PineappleCake.jpg?v=1694606906" alt="">
+        <img src="https://cdn.igp.com/f_auto,q_auto,t_prodl/products/p-exotic-pineapple-cake-1-kg--135653-m.jpg" alt="">
     </div>
-
-    <div class="footer">
-        <div class="footer_content">
-
-            <div class="reach">
-                <h3>ADDRESS</h3>
-                <ul>
-
-                    <li>A&A's Bakery, </li>
-                    <li>RamTekri Near White House, Mandsaur</li>
-
-
-<i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-telegram"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-whatsapp"></i>
-                </ul>
-            </div>
-            <div class="supp">
-                <h3>EMAIL</h3>
-                <ul>
-                    <li>AandA'sBakery123@gmail.com</li>
-                    <li>CakeBakery2345@gmail.com</li>
-                </ul>
-            </div>
-            <div class="callus">
-                <h3>CALL US</h3>
-                <li>+91 9901630013</li>
-                <li>+91 7007005129</li>
-            </div>
-            <div class="hours">
-                <h3>OPENING HOURS</h3>
-                <li>Monday - Friday 10.00am to 10.00pm</li>
-                <li>Saturday 10.00am to 8.00pm</li>
-            </div>
-
-        </div>
-        <div class="copy">
-            <p>&copy; 2023 Art Club, All Rights Reserved</p>
-        </div>
+    <p data-aos="flip-up" data-aos-duration="3000" data-aos-once="true">~ButterScotch Cakes~</p>
+    <div class="container">
+<img src="https://www.shreemithai.com/cdn/shop/products/FShreemithai15-01-2021-374lowrescopy_2400x.jpg?v=1611572065"
+            alt="">
+        <img src="https://suruchi.digitalgriho.com/wp-content/uploads/2022/11/Praline-Butterscotch.-1782x1621.jpg.webp"
+            alt="">
+        <img src="https://manoharbikkaneri.com/wp-content/uploads/2021/05/Butterscoth.jpeg" alt="">
+        <img src="https://cdn.igp.com/f_auto,q_auto,t_pnopt19prodlp/products/p-special-butterscotch-cake-half-kg--109218-m.jpg"
+            alt="">
+        <img src="https://www.fnp.com/images/pr/l/v20221130174910/crunchy-butterscotch-cake-half-kg-eggless_1.jpg"
+            alt="">
+        <img src="https://thomsonline.in/wp-content/uploads/2019/08/BUTTERSCOTCH-CAKE-3-750x500.jpg" alt="">
+        <img src="https://mioamoreshop.com/cdn/shop/files/Butterscotch-Two-Tier.png?v=1686660896" alt="">
+        <img src="https://www.fnp.com/images/pr/l/v20221130174853/butterscotch-cake-half-kg_2.jpg" alt="">
     </div>
+    <p data-aos="flip-up" data-aos-duration="3000" data-aos-once="true">~Vanilla Cakes~</p>
+    <div class="container">
 
+
+        <img src="https://www.fnp.com/images/pr/l/v20221130174938/vanilla-buttercream-cake-1-kg_2.jpg" alt="">
+        <img src="https://d3cif2hu95s88v.cloudfront.net/live-site-2016/product-image/Cakes/NewCakes/vanila-cake-3-600x600.jpg"
+            alt="">
+        <img src="https://res.cloudinary.com/insignia-flowera-in/images/f_auto,q_auto/v1688048060/Vanilla-creamy-cake_72013d7d5/Vanilla-creamy-cake_72013d7d5.jpg"
+            alt="">
+        <img src="https://yourkoseli.com/wp-content/uploads/2022/01/reveluv-romance-a.jpg" alt="">
+        <img src="https://www.indiagift.in/media/images/product/201903281553768635.JPG" alt="">
+        <img src="https://cakelicks.com/wp-content/uploads/2022/11/sq-round-shaped-vanilla-cake-4-cake904vani-A_0.jpg"
+            alt="">
+        <img src="https://shreemsweetsandbakery.com/wp-content/uploads/2021/04/Sprinkles-Vanilla-Cake.jpg" alt="">
+        <img src="https://i.pinimg.com/736x/da/bf/cc/dabfcc160a995a8e132a5089f74c3fe0.jpg" alt="">
+    </div>
+    <p data-aos="flip-up" data-aos-duration="3000" data-aos-once="true">~RedVelvet Cakes~</p>
+    <div class="container">
+        <img src="https://theobroma.in/cdn/shop/products/EgglessRedVelvetCake1.jpg?v=1632141306" alt="">
+        <img src="https://whereiscake.com/media/eidoz34k/ta_samayia-09032022-1.jpg?width=800&height=800&mode=crop&bgcolor=ffffff"
+            alt="">
+        <img src="https://www.fnp.com/images/pr/m/v20221205144845/red-velvet-fresh-cream-cake-half-kg-eggless.jpg"
+            alt="">
+        <img src="https://sugarandsparrow.s3.us-west-2.amazonaws.com/flour/wp-content/uploads/2022/01/18211315/Red-Velvet-Cake-Recipe-Header-1-1.jpg"
+            alt="">
+        <img src="https://pic.warmoven.in/catalog/product/cache/4e14bcb566d25893ae7201d4dbdc22fd/image/2288d0e8/red-velvet-heart-cake.jpg"
+            alt="">
+
+        <img src="https://assets.flowersnfruits.com/uploads/product-pics/1687852353_13075_24_13075.webp" alt="">
+        <img src="https://theseasidebaker.com/wp-content/uploads/2022/11/red-velvet-Christmas-cake-square-copy.jpg"
+            alt="">
+        <img src="https://funcakes.com/content/uploads/2022/06/Fun-Cakes-20201119-Glutenvrij-Red-Velvet-03-960x960-c-default.jpg"
+            alt="">
+    </div>
     <script>
         AOS.init();
     </script>
