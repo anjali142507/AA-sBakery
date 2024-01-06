@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>About Us</title>
+    <script src="https://kit.fontawesome.com/00443d2abd.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: url('https://png.pngtree.com/background/20210709/original/pngtree-geometric-color-block-simple-light-blue-picture-image_910369.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        nav{
+            background-color:#b38f8f;
+    font-family: jost,futura,gill sans,Arial,sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+   max-width: 100%;
+    /* position: fixed; */
+    /* top:20px; */
+    margin:20px;
+    display: flex;
+  
+}
+.container_ul{
+   
+    display: flex;
+    list-style: none;
+   
+}
+a{
+    text-decoration: none;
+    color:white;
+    padding: 20px 16px;
+}
+.logo img{
+    height:60px;
+    width:60px;
+    
+}
+.logo{
+    display: flex;
+    margin-left: 14px;
+    mix-blend-mode: multiply;
+}
+.num{
+    position: absolute;
+    right:30px;
+}
+a:hover{
+    color: rgb(0, 0, 0);
+}
+
+
+        .container{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 15px;
+        }
+        .image img{
+            height: 470px;
+            width: 430px;
+            margin-top: 5px;
+        }
+        .div1{
+            height: 230px;
+            width: 220px;
+            background-color: #f0e3c7;
+            margin: 5px;
+            text-align: center;
+           
+        }
+        .div2,.div3,.div4{
+            height: 230px;
+            width: 220px;
+            background-color: #f0e3c7;
+          margin: 5px;
+          text-align: center;
+        }
+        
+        .contact{
+            
+           padding-left: 10px;
+            
+        }
+        .upper, .lower{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .header{
+            text-align: center;
+              
+            }
+        h1{
+            /* background-color: white; */
+            display: inline-block;
+            font-size: 70px;
+            margin: 0;
+            margin-top: 10px;
+           color: rgb(96, 69, 19);
+           font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+              letter-spacing: 10px;
+          
+        }
+        h2{
+            font-size: 40px;
+            font-family: Roboto, sans-serif;
+           text-align: center;
+           margin: 8px 0px;
+        }
+        .text{
+            font-family: Roboto, sans-serif;
+            font-size: 20px;
+            padding: 3px 0px;
+            text-align: center;
+            font-weight: bold;
+            
+        }
+         .octime{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding:7px;
+        }
+         .ocday{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 15px;
+        }
+        h3{
+            /* text-align: center; */
+            font-size: 40px;
+            padding: 3px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: rgb(96, 69, 19);
+        }
+        i{
+            font-size: 30px;
+            border: 2px solid black;
+            padding: 8px;
+            border-radius: 50%;
+            margin-top: 30px;
+            
+        }
+       .div2 i{
+            font-size: 34px;
+    padding: 7px 11px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-top: 30px;
+        }
+        h4{
+            font-size: 20px;
+            padding: 13px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: rgb(96, 69, 19);
+
+
+         font-weight: bold;
+        }
+        .address, .phone, .email{
+            font-family: Roboto, sans-serif;
+            font-size: 14px;
+        }
+
+        .footer{
+            background: #ffe1e1;
+  }
+  .footer_content{
+    justify-content: center;
+    gap:60px;
+    display:flex;
+    flex-wrap:wrap;
+    
+    
+ 
+  }
+  .footer_content ul ,a{
+    list-style: none;
+    text-decoration:none;
+  }
+  .footer_content li{
+    padding: 4px;
+    font-size: 18px;
+    color: #6c717a;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .footer_content h3{
+    padding: 20px 0px;
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .reach i{
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid rgb(7, 3, 3);
+    border-radius: 4px;
+    padding: 8px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  .reach i:hover{
+    transform: scale(1.2);
+    transition: all 0.3s;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+  }
+  .flogo img{
+    height: 200px;
+    width: 200px;
+    mix-blend-mode: multiply;
+  }
+  .copy{
+    text-align: center;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    color: #6c717a;
+    padding-bottom: 50px;
+  }
+  .callus, .hours{
+    list-style: none;
+  }
+  @media only screen and (max-width:800px)and (min-width:50px){
+    .container_ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact{
+        padding: 0px;
+    }
+    .num{
+        position: relative;
+        right: 0;
+    }
+    .logo{
+        justify-content: center;
+    }
+    nav{
+    justify-content: center;
+    flex-direction: column;
+    }
+ }
+  @media only screen and (max-width:500px){
+     .upper, .lower{
+        justify-content:center;
+     }
+     .image img{
+        height: auto;
+        width: 100%;
+     }
+  }
+  @media only screen and (max-width:355px){
+    .header h1{
+        font-size: 40px;
+        
+    }
+    .text{
+        padding: 3px 20px;
+    }
+  }
+</style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://ih1.redbubble.net/image.2342586976.0567/st,small,507x507-pad,600x600,f8f8f8.jpg">
+        </div>
+        <ul class="container_ul">
+        <a href="bakery.html"><li>HOME</li></a>
+        <a href="menu.html"><li>MENU</li></a>
+        <a href="aboutus.html"><li>ABOUT US</li></a>
+        <a href="contactus.html"><li>CONTACT US</li></a>
+        <a href="#"class="num"><li>+917007005120</li></a>
+    </ul>
+    </nav>
+    <div class="header">
+        <h1>~ABOUT US~</h1>
+    </div>
+    <div class="para">
+     <h2 data-aos="zoom-in" data-aos-once="true" data-aos-duration="2000">| How it started |</h2>
+       <p class="text"> We both are friends till childhood and we decided to open a bakery in our hometown whose name is "A&A's Bakery" .</p>
+       <p class="text"> Our mission is to add sugar in your life by making sweet and delicious cakes.</p>
+       <p class="text">Thank you for visiting our website , Hope you will like it and visit again.</p>
+    </div>
+    <div class="maincontainer">
+    <div class="container">
+        <div class="image">
+            <img src="aboutus.jpg" alt="">
+        </div>
+        <div class="contact">
+            <div class="upper">
+                <div class="div1">
+                    <h3>Hours</h3>
+                    <p class="ocday">Monday-Saturday</p>
+                    <p class="octime">8am-9pm</p>
+                    <p class="ocday">Sunday</p>
+                    <p class="octime">9am-7pm</p>
+               </div>
+                <div class="div2">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h4>ADDRESS:</h4>
+                    <p class="address">Ram Tekri Near White House Mandsaur, Madhya Pradesh</p>
+                </div>
+            </div>
+            <div class="lower">
+                <div class="div3">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h4>EMAIL:</h4>
+
+
+<p class="email">patwaarchi@gmail.com</p>
+                    <p class="email">anjalimali452114@gmail.com</p>
+                </div>
+                <div class="div4">
+                    <i class="fa-solid fa-phone"></i>
+                    <h4>CALL US:</h4>
+                    <p class="phone">+917007005120</p>
+                    <p class="phone">+915100600103</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_content">
+            <div class="reach">
+                <h3>ADDRESS</h3>
+                <ul>
+                    <li>A&A's Bakery,  </li>
+                        <li>RamTekri Near White House, Mandsaur</li>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-telegram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-whatsapp"></i>
+                </ul>
+            </div>
+            <div class="supp">
+                <h3>EMAIL</h3>
+                <ul>
+                    <li>AandA'sBakery123@gmail.com</li>
+                    <li>CakeBakery2345@gmail.com</li>
+                </ul>
+            </div>
+            <div class="callus">
+                <h3>CALL US</h3>
+                <li>+91 9901630013</li>
+                <li>+91 7007005129</li>
+            </div>
+            <div class="hours">
+                <h3>OPENING HOURS</h3>
+                <li>Monday - Friday 10.00am to 10.00pm</li>
+                <li>Saturday 10.00am to 8.00pm</li>
+            </div>
+        </div>
+        <div class="copy">
+            <p>&copy; 2023 Art Club, All Rights Reserved</p>
+        </div>
+    </div>
+</div>
+<script>
+    AOS.init();
+  </script>
+</body>
+</html>

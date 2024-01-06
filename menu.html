@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+    </style>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/4d8ffbb55d.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-image: url('https://t3.ftcdn.net/jpg/05/52/04/96/360_F_552049619_cDSWkPfGoiFntULDdwzlCc4HZiCimP89.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        nav {
+            background-color: #b38f8f;
+            font-family: jost, futura, gill sans, Arial, sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            max-width: 100%;
+            margin: 20px;
+            display: flex;
+
+        }
+
+        .container_ul {
+
+            display: flex;
+            list-style: none;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            padding: 20px 16px;
+        }
+
+        .logo img {
+            height: 60px;
+            width: 60px;
+
+
+        }
+
+        .logo {
+            display: flex;
+            margin-left: 14px;
+            mix-blend-mode: multiply;
+
+        }
+
+        .num {
+            position: absolute;
+            right: 30px;
+        }
+
+        a:hover {
+            color: rgb(0, 0, 0);
+        }
+
+        .container {
+            display: flex;
+            gap: 14px 0px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .div_img img {
+            height: 250px;
+            width: 250px;
+            transition: border-radius linear 0.7s;
+
+        }
+
+        .div_img img:hover {
+            border-radius: 50px;
+            box-shadow: 2px 2px 6px white;
+
+        }
+
+        .text {
+
+            width: 250px;
+            text-align: center;
+        }
+
+        .text li {
+            list-style: none;
+        }
+
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+
+        .container ul {
+            padding: 0px;
+            font-family: Comic Sans MS;
+            font-size: 18px;
+            color: rgb(136, 84, 84);
+        }
+
+        h3 {
+            margin: 0px;
+            color: rgb(87, 41, 41);
+            font-size: 40px;
+            font-family: 'Kalam', cursive;
+        }
+
+        .head {
+            text-align: center;
+            background-color: white;
+            font-size: 45px;
+
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            letter-spacing: 10px;
+            color: rgb(100, 76, 41);
+        }
+
+        .spcl_head {
+            text-align: center;
+            background-color: white;
+            color: rgb(87, 41, 41);
+            font-size: 50px;
+            font-weight: bold;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            letter-spacing: 10px;
+        }
+
+        .imagesbox1 {
+            display: flex;
+            gap: 20px 100px;
+            justify-content: center;
+            flex-wrap: wrap;
+
+        }
+
+        .imagesbox2 {
+            display: flex;
+            gap: 20px 100px;
+            justify-content: center;
+            flex-wrap: wrap;
+
+        }
+
+        .imgdiv img {
+            height: 200px;
+            width: 200px;
+
+        }
+
+        .imgdiv img:hover {
+            opacity: 0.7;
+        }
+
+        .thead {
+            text-align: center;
+            font-size: 50px;
+            letter-spacing: 5px;
+            padding: 10px;
+        }
+
+        h4 {
+            text-align: center;
+            font-size: 15px;
+
+            font-family: Poppins, sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+
+
+background-color: rgb(145, 4, 135);
+            color: bisque;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .footer {
+            background: #ffe1e1;
+        }
+
+        .footer_content {
+            justify-content: center;
+            gap: 60px;
+            display: flex;
+            flex-wrap: wrap;
+
+
+
+        }
+
+        .footer_content ul,
+        a {
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .footer_content li {
+            padding: 4px;
+            font-size: 18px;
+            color: #6c717a;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .footer_content h3 {
+            padding: 20px 0px;
+            font-size: 25px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .reach i {
+            padding: 10px;
+            font-size: 20px;
+            border: 2px solid rgb(7, 3, 3);
+            border-radius: 4px;
+            padding: 8px;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+        }
+
+        .reach i:hover {
+            transform: scale(1.2);
+            transition: all 0.3s;
+            cursor: pointer;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .flogo img {
+            height: 200px;
+            width: 200px;
+            mix-blend-mode: multiply;
+        }
+
+        .copy {
+            text-align: center;
+            font-size: 14px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 20px;
+            color: #6c717a;
+            padding-bottom: 50px;
+        }
+
+        .callus,
+        .hours {
+            list-style: none;
+        }
+
+        /* media queries */
+        @media only screen and (max-width:800px)and (min-width:50px) {
+            .container_ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .num {
+                position: relative;
+                right: 0;
+            }
+
+            .logo {
+                justify-content: center;
+            }
+
+            nav {
+                justify-content: center;
+                flex-direction: column;
+            }
+        }
+
+        @media only screen and (max-width:500px) {
+            .thead {
+                font-size: 30px;
+            }
+
+            .spcl_head {
+                font-size: 30px;
+                letter-spacing: 5px;
+            }
+
+            .head {
+                font-size: 30px;
+                letter-spacing: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://ih1.redbubble.net/image.2342586976.0567/st,small,507x507-pad,600x600,f8f8f8.jpg">
+        </div>
+        <ul class="container_ul">
+            <a href="bakery.html">
+                <li>HOME</li>
+            </a>
+            <a href="menu.html">
+                <li>MENU</li>
+            </a>
+            <a href="aboutus.html">
+                <li>ABOUT US</li>
+            </a>
+            <a href="contactus.html">
+                <li>CONTACT US</li>
+            </a>
+            <a href="#" class="num">
+                <li>+917007005120</li>
+            </a>
+        </ul>
+    </nav>
+    <h1 class="head">~BAKERY MENU~</h1>
+    <div class="container">
+        <div class="box">
+            <a href="gridcake.html">
+                <div class="div_img"><img
+                        src="https://cdn.shopify.com/s/files/1/0521/3929/4884/products/chocoholic1.jpg?v=1626941600">
+                </div>
+            </a>
+            <div class="text">
+                <h3 data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">Cakes</h3>
+                <ul data-aos="zoom-in-up" data-aos-duration="2500" data-aos-once="true">
+                    <li>Chocolate - 200/-</li>
+                    <li>Strawberry -300/-</li>
+                    <li>Black Forest - 400/-</li>
+                    <li>Pineapple - 450/-</li>
+                    <li>ButterScotch - 450/-</li>
+                    <li>Vanilla - 385/-</li>
+                    <li>RedVelvet - 500/-</li>
+                </ul>
+            </div>
+        </div>
+        <div class="box">
+            <a href="donutgrid.html">
+                <div class="div_img"><img
+                        src="https://www.completelydelicious.com/wp-content/uploads/2021/02/yeast-raised-doughnuts-6.jpg">
+                </div>
+            </a>
+            <div class="text">
+                <h3 data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">Donuts</h3>
+                <ul data-aos="zoom-in-up" data-aos-duration="2500" data-aos-once="true">
+                    <li>Strawberry - 50/-</li>
+                    <li>BlueBerry - 55/-</li>
+                    <li>Peanut - 40/-</li>
+                    <li>Sugar Raised - 30/-</li>
+
+
+                    <li>Rainbow -70/- </li>
+                    <li>Chocolate - 40/-</li>
+                    <li>Avacado - 65/-</li>
+                </ul>
+            </div>
+        </div>
+
+
+<div class="box">
+            <a href="gridpastry.html">
+                <div class="div_img"><img src="https://bkmedia.bakingo.com/tasty-chocolate-truffle-past0162choc-CC.jpg">
+                </div>
+            </a>
+            <div class="text">
+                <h3 data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">Pastries</h3>
+                <ul data-aos="zoom-in-up" data-aos-duration="2500" data-aos-once="true">
+                    <li>Coffee - 55/-</li>
+                    <li>ButterScotch - 45/-</li>
+                    <li>Oreo - 70/-</li>
+                    <li>Fruit - 65/-</li>
+                    <li>Mango - 50/-</li>
+                    <li>Black Forest - 40/-</li>
+                    <li>Redvelvet - 60/-</li>
+                </ul>
+            </div>
+        </div>
+        <div class="box">
+            <a href="cupcakegrid.html">
+                <div class="div_img"><img
+                        src="https://cdn.shopify.com/s/files/1/0521/3929/4884/products/Vanilla_BlueberryCupCake1-green-dot.jpg?v=1669903458">
+                </div>
+            </a>
+            <div class="text">
+                <h3 data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">CupCakes</h3>
+                <ul data-aos="zoom-in-up" data-aos-duration="2500" data-aos-once="true">
+                    <li>Lemon - 60/-</li>
+                    <li>Banana - 50/-</li>
+                    <li>Jam - 75/-</li>
+                    <li>Icecream - 80/-</li>
+                    <li>Peanut Butter - 75/-</li>
+                    <li>Pumpkin - 90/-</li>
+                    <li>Caramel - 130/-</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="spcl_head" data-aos="fade-up" data-aos-once="true">~Our Specialities~</div>
+    <div class="thead" data-aos="fade-up" data-aos-once="true">| BY OCCASIONS |</div>
+    <div class="imagesbox1" data-aos="fade-up" data-aos-once="true">
+
+        <div class="imgdiv">
+            <a href="#"><img src="birthday.jpg" alt="error"></a>
+            <h4>BirthdayCake</h4>
+        </div>
+        <div class="imgdiv">
+            <a href="#"><img src="annicake.jpg" alt="error"></a>
+            <h4>AnniverseryCake</h4>
+        </div>
+        <div class="imgdiv">
+            <a href="#"><img src="wedcake.jpg" alt="error"></a>
+            <h4>WeddingCake</h4>
+        </div>
+        <div class="imgdiv">
+            <a href="#"><img src="ffcake.jpg" alt="error"></a>
+            <h4>FriendshipCake</h4>
+        </div>
+    </div>
+    <div class="thead" data-aos="fade-up" data-aos-once="true">| BY TYPE |</div>
+    <div class="imagesbox2" data-aos="fade-up" data-aos-once="true">
+
+        <div class="imgdiv">
+            <a href="#"><img src="bomb.jpg" alt="error"></a>
+            <a href="#">
+                <h4>BombCake</h4>
+            </a>
+        </div>
+        <div class="imgdiv">
+            <a href="#"><img src="pinataa.jpg" alt="error"></a>
+            <a href="#">
+                <h4>PinataCake</h4>
+            </a>
+        </div>
+        <div class="imgdiv">
+            <a href="#"><img src="jarr.jpg" alt="error"></a>
+            <a href="#">
+                <h4>JarCake</h4>
+            </a>
+        </div>
+        <div class="imgdiv">
+            <a href="#"><img src="pullmeupp.jpg" alt="error"></a>
+            <a href="#">
+                <h4>PullMeUpCake</h4>
+            </a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer_content">
+
+            <div class="reach">
+                <h3>ADDRESS</h3>
+                <ul>
+
+                    <li>A&A's Bakery, </li>
+                    <li>RamTekri Near White House, Mandsaur</li>
+
+<i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-telegram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </ul>
+            </div>
+            <div class="supp">
+                <h3>EMAIL</h3>
+                <ul>
+                    <li>AandA'sBakery123@gmail.com</li>
+                    <li>CakeBakery2345@gmail.com</li>
+                </ul>
+            </div>
+            <div class="callus">
+                <h3>CALL US</h3>
+                <li>+91 9901630013</li>
+                <li>+91 7007005129</li>
+            </div>
+            <div class="hours">
+                <h3>OPENING HOURS</h3>
+                <li>Monday - Friday 10.00am to 10.00pm</li>
+                <li>Saturday 10.00am to 8.00pm</li>
+            </div>
+
+        </div>
+        <div class="copy">
+            <p>&copy; 2023 Art Club, All Rights Reserved</p>
+        </div>
+    </div>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

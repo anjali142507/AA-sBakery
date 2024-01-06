@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4d8ffbb55d.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        body{
+            background-image: url('contactbg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        nav{
+            background-color:#b38f8f;
+    font-family: jost,futura,gill sans,Arial,sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+   max-width: 100%;
+    /* position: fixed; */
+    /* top:20px; */
+    margin:20px;
+    display: flex;
+  
+}
+.container_ul{
+   
+    display: flex;
+    list-style: none;
+   
+}
+a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    padding: 20px 16px;
+}
+.logo img{
+    height:60px;
+    width:60px;
+    
+}
+.logo{
+    display: flex;
+    margin-left: 14px;
+    mix-blend-mode: multiply;
+}
+.num{
+    position: absolute;
+    right:30px;
+}
+a:hover{
+color: rgb(0, 0, 0);
+}
+
+.vdo video{
+    
+   height: 450px;
+   width: 800px;
+   border-radius: 20px;
+   
+   
+    
+}
+.vdo{
+   
+    border-radius: 20px;
+   box-shadow: 1px 1px 90px pink;
+    margin-left: 20px;
+    
+}
+
+.form{
+   
+    margin: auto;
+    
+}
+.container{
+    display: flex;
+    margin: 70px 0px;
+flex-wrap: wrap;
+}
+.main_form{
+    text-align: center;
+      background:white ;
+      border-radius: 12px;
+      text-transform: uppercase;
+     
+     
+}
+.formdesign{
+    padding: 10px;
+    font-family: jost,futura,gill sans,Arial,sans-serif;
+ display: flex;
+
+}
+.formdesign input{
+    height: 20px;
+    width: 245px;
+    border:2px solid silver;
+    padding: 0px 5px;
+}
+.button input {
+    height: 33px;
+    width:85px;
+    font-family: jost,futura,gill sans,Arial,sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    background: rgb(100, 76, 41);;
+    color:white;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgb(86, 85, 80);
+    border:none;
+
+}
+.button input:hover{
+    background: rgb(100, 76, 41);;
+    color: #fff7ec;
+}
+.button {
+    padding: 10px;
+    
+
+}
+
+h2{
+    color: rgb(96, 69, 19);
+           font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+              letter-spacing: 7px;
+              padding: 25px;
+}
+.forlabel{
+   flex: 1;
+}
+.forinput{
+    flex: 2;
+}
+
+
+.footer{
+    background: #ffe1e1;
+  }
+  .footer_content{
+    justify-content: center;
+    gap:60px;
+    display:flex;
+    flex-wrap:wrap;
+    
+    
+ 
+  }
+  .footer_content ul ,a{
+    list-style: none;
+    text-decoration:none;
+  }
+  .footer_content li{
+    padding: 4px;
+    font-size: 18px;
+    color: #6c717a;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .footer_content h3{
+    padding: 20px 0px;
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .reach i{
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid rgb(7, 3, 3);
+    border-radius: 4px;
+    padding: 8px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  .reach i:hover{
+    transform: scale(1.2);
+    transition: all 0.3s;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+  }
+  .flogo img{
+    height: 200px;
+    width: 200px;
+    mix-blend-mode: multiply;
+  }
+  .copy{
+    text-align: center;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    color: #6c717a;
+    padding-bottom: 50px;
+  }
+  .callus, .hours{
+    list-style: none;
+  }
+/* //media queries */
+@media only screen and (max-width:800px)and (min-width:50px){
+    .container_ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    .num{
+        position: relative;
+        right: 0;
+    }
+    .logo{
+        justify-content: center;
+    }
+    nav{
+    justify-content: center;
+  
+    flex-direction: column;
+}
+   .vdo video{
+     height: auto;
+     width: 100%;
+     
+   }
+
+}
+@media only screen and (max-width:1210px){
+    .container{
+        justify-content: center;
+        gap: 50px;
+    }
+    .vdo{
+        margin: 0;
+    }
+}
+@media only screen and (max-width:330px){
+    .form{
+        height: auto;
+        width: 100%;
+    }
+   .formdesign{
+    flex-direction: column;
+   }
+}
+
+</style>
+
+<script>
+    function clearErrors(){
+
+        errors=document.getElementsByClassName('fromerror');
+        for(let item of errors)
+        {
+            item.innerHTML="";
+        }
+    }
+function seterror(id,error){
+    //sets error inside tag of id
+    element=document.getElementById(id);
+    element.getElementsByClassName('fromerror')[0].innerHTML=error;
+}
+function validateForm(){
+    var returnval=true;
+    clearErrors();
+    var name=document.forms['myform']["fname"].value;
+    if(name.length<5){
+        seterror("name","Length of name is too short");
+        returnval=false;
+    
+    }
+
+    if(name.length==0){
+        seterror("name","Enter your name");
+        returnval=false;
+    }
+    var email=document.forms['myform']["femail"].value;
+    if(email.length>20){
+    seterror("email","enter valid email");
+    returnval=false;
+    }
+    var phone=document.forms['myform']["fphone"].value;
+    if(phone.length!=10){
+    seterror("phone","enter valid phone number");
+    returnval=false;
+    }
+    
+    
+
+return returnval;
+}
+
+</script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://ih1.redbubble.net/image.2342586976.0567/st,small,507x507-pad,600x600,f8f8f8.jpg">
+        </div>
+        <ul class="container_ul">
+        <a href="bakery.html"><li>HOME</li></a>
+        <a href="menu.html"><li>MENU</li></a>
+        <a href="aboutus.html"><li>ABOUT US</li></a>
+        <a href="contactus.html"><li>CONTACT US</li></a>
+        <a href="#"class="num"><li>+917007005120</li></a>
+    </ul>
+    </nav>
+    <div class="container">
+        <div class="vdo_div">
+        <div class="vdo">
+            <video controls autoplay>
+                <source src="ourbakery.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+        <div class="form">
+            <div class="main_form">
+
+
+<h2>~CONTACT US~</h2>
+                <form action="/myaction.php" name="myform" onsubmit="return validateForm()" method="post">
+                    <div class="formdesign" id="name">
+                        <div class="forlabel">
+                            <label for="firstname">Name:</label>
+                        </div>
+                       <div class="forinput">
+                        <input type="text"name="fname" required class="fromerror" placeholder="Enter Your Name"><b></b>
+                       </div>
+                    </div>
+     
+                    <div class="formdesign" id="email" >
+                        <div class="forlabel">
+                            <label>Email:</label>
+                        </div>
+                        <div class="forinput">
+                            <input type="email"name="femail" required placeholder="Enter Your email" class="fromerror"><b></b>
+                        </div>
+                    
+                    
+                    </div>
+                    <div class="formdesign" id="phone"required>
+                        <div class="forlabel">
+                            <label>Phone:</label>
+                        </div>
+                        <div class="forinput">
+                            <input type="phone"name="fphone"required  placeholder="Enter Your Phone " class="fromerror"><b></b>
+                        </div>
+                
+                    </div>
+                    
+                  
+                   <div class="button">
+                    <input type="Submit" class="but" value="Submit">
+                   </div>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+       
+    <div class="footer">
+        <div class="footer_content">
+            
+            <div class="reach">
+                <h3>ADDRESS</h3>
+                <ul>
+                    
+                    <li>A&A's Bakery,  </li>
+                        <li>RamTekri Near White House, Mandsaur</li>
+                       
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-telegram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-whatsapp"></i>
+                </ul>
+            </div>
+            <div class="supp">
+                <h3>EMAIL</h3>
+                <ul>
+                    <li>AandA'sBakery123@gmail.com</li>
+                    <li>CakeBakery2345@gmail.com</li>
+                </ul>
+            </div>
+            <div class="callus">
+                <h3>CALL US</h3>
+                <li>+91 9901630013</li>
+                <li>+91 7007005129</li>
+            </div>
+            <div class="hours">
+                <h3>OPENING HOURS</h3>
+                <li>Monday - Friday 10.00am to 10.00pm</li>
+                <li>Saturday 10.00am to 8.00pm</li>
+            </div>
+            
+        </div>
+        <div class="copy">
+            <p>&copy; 2023 Art Club, All Rights Reserved</p>
+        </div>
+    </div>
+</body>
+</html>
