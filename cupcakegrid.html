@@ -87,6 +87,33 @@
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             letter-spacing: 10px;
         }
+         /* media queries */
+         @media only screen and (max-width:800px)and (min-width:50px){
+    .container_ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    .icon{
+        display:  flex;
+        flex-direction: row;
+    }
+    .num{
+        position: relative;
+        right: 0;
+    }
+    .logo{
+        justify-content: center;
+    }
+    nav{
+    justify-content: center;
+    flex-direction: column;
+}
+ }
+ @media screen and (max-width:611px){
+    p{
+        font-size:18px;
+    }
+ }
     </style>
 </head>
 

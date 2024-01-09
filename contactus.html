@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/4d8ffbb55d.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Contact US</title>
     <style>
         *{
             margin: 0;padding: 0;
@@ -262,7 +262,7 @@ function validateForm(){
     var returnval=true;
     clearErrors();
     var name=document.forms['myform']["fname"].value;
-    if(name.length<5){
+    if(name.length<3){
         seterror("name","Length of name is too short");
         returnval=false;
     
@@ -273,7 +273,7 @@ function validateForm(){
         returnval=false;
     }
     var email=document.forms['myform']["femail"].value;
-    if(email.length>20){
+    if(email.length>35){
     seterror("email","enter valid email");
     returnval=false;
     }
@@ -318,6 +318,8 @@ return returnval;
 <h2>~CONTACT US~</h2>
                 <form action="/myaction.php" name="myform" onsubmit="return validateForm()" method="post">
                     <div class="formdesign" id="name">
+
+                        
                         <div class="forlabel">
                             <label for="firstname">Name:</label>
                         </div>

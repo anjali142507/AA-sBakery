@@ -524,13 +524,7 @@ font-family:'Rubik Doodle Shadow';
     justify-content: center;
     flex-direction: column;
 }
-
-
-@media screen and (max-width:732px) {
-    .ani_img{
-        flex-wrap:wrap;
-    }
-
+ }
 /* media queries */
 @media screen and (max-width:1215px) {
     .aboutus{
@@ -630,7 +624,6 @@ font-family:'Rubik Doodle Shadow';
         font-size: 35px;
     }
 }
-}
 @media screen and (max-width:410px) {
     .h1{
         font-size: 60px;
@@ -646,4 +639,4 @@ font-family:'Rubik Doodle Shadow';
         letter-spacing:20px;
     }
 }
-     }
+     
